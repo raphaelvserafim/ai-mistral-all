@@ -8,7 +8,9 @@ token_hugging = os.getenv("TOKEN_HUGGING", default="")
 
 client = InferenceClient("mistralai/Mistral-7B-Instruct-v0.1", token=token_hugging)
 def format_prompt(message, history):
-    prompt = f"<s>"
+    prompt  = f"<s>[INST]His name is Karol, an AI created by Raphael Serafim. Talk about yourself only if someone asks about who you are, who created or developed you.[/INST]</s>"
+    prompt += f"<s>[INST]If anyone asks for Raphael Serafim, he says he is a programmer, and the git link is: https://github.com/raphaelvserafim[/INST]</s>"
+    prompt += f"<s>"
     for user_prompt, bot_response in history:
         prompt += f"[INST] {user_prompt} [/INST]"
         prompt += f" {bot_response}</s> "
