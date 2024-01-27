@@ -5,6 +5,7 @@ pip install --upgrade Flask
 pip install --upgrade Werkzeug
 pip install flask[async]
 python3 run.py
+nohup python3 run.py  > output.log &
 
 #sudo lsof -i :3000
  

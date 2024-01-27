@@ -2,3 +2,4 @@
 conversations/*
 __pycache__/
 prompts
+output.log
