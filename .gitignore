@@ -1,3 +1,4 @@
 .env
 conversations/*
 __pycache__/
+prompts
