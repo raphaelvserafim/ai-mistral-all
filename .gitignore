@@ -3,3 +3,5 @@ conversations/*
 __pycache__/
 prompts
 output.log
+conversations.db
+models/*
