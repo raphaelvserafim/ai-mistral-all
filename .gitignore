@@ -5,3 +5,4 @@ prompts
 output.log
 conversations.db
 models/*
+dataset/*

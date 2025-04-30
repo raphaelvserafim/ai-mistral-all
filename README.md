@@ -71,6 +71,12 @@ Endpoints
 ```sh
   curl http://localhost:3000/api/conversation
 ```
+5. Train
+```sh
+cd app
+python3 train.py
+```
+
 
 Estrutura de pastas (exemplo)
 -----------------------------
@@ -85,6 +91,10 @@ Estrutura de pastas (exemplo)
 │       └── api.py
 ├── models/
 │   └── mistral.gguf
+│
+├── dataset/
+│   └── train.txt
+│
 ├── server.py
 ├── README.txt
 ```
