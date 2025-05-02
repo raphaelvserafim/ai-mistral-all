@@ -20,6 +20,9 @@ mkdir -p models
 ```sh
 wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q4_K_M.gguf \
   -O models/mistral.gguf
+
+wget https://huggingface.co/TheBloke/deepseek-llm-7B-chat-GGUF/resolve/main/deepseek-llm-7b-chat.Q2_K.gguf \
+  -O models/deepseek.gguf
 ```
 
 Inicializando o servidor
